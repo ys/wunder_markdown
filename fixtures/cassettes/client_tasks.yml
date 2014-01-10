@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wunderlist.com/ABNSAAWFdcY/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/json
+      Authorization:
+      - token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 10 Jan 2014 23:40:07 GMT
+      Etag:
+      - "\"2667836597eb1e6c5da2e750d2756119\""
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-6w-Client-Status:
+      - unknown
+      X-6w-Timestamp:
+      - '1389397207'
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Delay-Hard:
+      - '15'
+      X-Ratelimit-Delay-Soft:
+      - '4587'
+      X-Request-Id:
+      - bdd9b80ab70a9932c4f6ed7eb80dc11c
+      X-Server:
+      - ip-10-33-130-18
+      Content-Length:
+      - '401'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[{\"assignee_id\":null,\"completed_at\":null,\"completed_by_id\":null,\"created_at\":\"2013-11-21T19:28:26Z\",\"created_by_id\":\"AANSAAAHLAY\",\"deleted_at\":null,\"due_date\":null,\"id\":\"ACNSABwHiMA\",\"list_id\":\"ABNSAAWFdcY\",\"local_identifier\":\"localId:iPhone:AANSAAAHLAY:Task:A5F4C2ED-838B-4A96-97EB-4DCB6DEE9103\",\"note\":null,\"owner_id\":\"AANSAAAHLAY\",\"parent_id\":null,\"position\":-159.99984,\"recurrence_count\":null,\"recurrence_type\":null,\"recurring_parent_id\":null,\"starred\":false,\"title\":\"Issues
+        lists\",\"type\":\"Task\",\"updated_at\":\"2014-01-08T18:45:02Z\",\"updated_by_id\":\"AANSAAAHLAY\",\"user_id\":\"AANSAAAHLAY\"},{\"assignee_id\":null,\"completed_at\":null,\"completed_by_id\":null,\"created_at\":\"2013-11-21T19:28:26Z\",\"created_by_id\":\"AANSAAAHLAY\",\"deleted_at\":null,\"due_date\":null,\"id\":\"ACNSABwHiL0\",\"list_id\":\"ABNSAAWFdcY\",\"local_identifier\":\"localId:iPhone:AANSAAAHLAY:Task:FE0192CB-1AB4-4AB6-8927-DFC39AE6EED8\",\"note\":null,\"owner_id\":\"AANSAAAHLAY\",\"parent_id\":null,\"position\":-149.99979,\"recurrence_count\":null,\"recurrence_type\":null,\"recurring_parent_id\":null,\"starred\":false,\"title\":\"Dot
+        files aggregator\",\"type\":\"Task\",\"updated_at\":\"2014-01-08T18:45:01Z\",\"updated_by_id\":\"AANSAAAHLAY\",\"user_id\":\"AANSAAAHLAY\"}]"
+    http_version:
+  recorded_at: Fri, 10 Jan 2014 23:40:07 GMT
+recorded_with: VCR 2.8.0

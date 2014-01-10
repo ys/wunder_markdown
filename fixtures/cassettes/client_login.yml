@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.wunderlist.com/login
+    body:
+      encoding: UTF-8
+      string: "{ \"email\": \"yannick.schutz@gmail.com\", \"password\": \"1234\"}"
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 10 Jan 2014 23:31:15 GMT
+      Etag:
+      - "\"e6203653b533e125ab9eee0886682445\""
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-6w-Client-Status:
+      - unknown
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Delay-Hard:
+      - '15'
+      X-Ratelimit-Delay-Soft:
+      - '2897'
+      X-Request-Id:
+      - 120111c5f76f02ebb41695d2751742fd
+      X-Server:
+      - ip-10-33-130-18
+      Content-Length:
+      - '1072'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":\"AANSAAAHLAY\",\"created_at\":\"2013-05-14T20:31:16Z\",\"updated_at\":\"2013-05-14T20:31:16Z\",\"name\":\"Yannick
+        Schutz\",\"type\":\"User\",\"avatar\":\"https://wunderlist-files.s3.amazonaws.com/uploads/user/avatar/d75ba7a7e0ffaf955e77609bb8b2184913a54d8c/avatar_64x64_localId_Mac_AANSAAAHLAY_User_8CB11CB3-F804-45B5-9B66-83D8B4595F44.png\",\"email\":\"yannick.schutz@gmail.com\",\"token\":\"token\",\"terms_accepted_at\":null,\"confirmation_state\":\"confirmed_email\",\"email_confirmed\":true,\"channel\":\"me.updates.60c12f433efa627e1cdcc88c962d1b4da3b988c7\",\"product\":null,\"group_product\":null,\"facebook\":\"834956678\",\"settings\":{\"account_locale\":\"en\",\"background\":\"wlbackground13\",\"campaign_iyf4_notification\":\"true\",\"campaign_iyf4_notification_last_date\":\"2013-11-12T14:02:23Z\",\"campaign_iyf4_notification_variation\":\"d\",\"confirm_delete_entity\":\"true\",\"consumed_quota_assigning_daily\":\"0\",\"consumed_quota_assigning_daily_date\":\"2013-11-23\",\"consumed_quota_assigning_overall\":\"0\",\"consumed_quota_comments_daily\":\"0\",\"consumed_quota_comments_daily_date\":\"2013-11-23\",\"consumed_quota_comments_overall\":\"0\",\"consumed_quota_files_daily\":\"0\",\"consumed_quota_files_daily_date\":\"2013-11-23\",\"consumed_quota_files_overall\":\"0\",\"experiment_chatter_notifications\":\"compacted\",\"inbox_name\":\"Inbox\",\"migrated_wunderlist_one_user\":\"false\",\"newsletter_subscription_enabled\":\"false\",\"new_task_location\":\"top\",\"notifications_desktop_enabled\":\"true\",\"notifications_email_enabled\":\"false\",\"print_completed_items\":\"false\",\"setting\":\"{}\",\"show_completed_items\":\"true\",\"smartlist_visibility_all\":\"hidden\",\"smartlist_visibility_assigned_to_me\":\"auto\",\"smartlist_visibility_conversations\":\"auto\",\"smartlist_visibility_done\":\"hidden\",\"smartlist_visibility_starred\":\"hidden\",\"smartlist_visibility_today\":\"hidden\",\"smartlist_visibility_week\":\"hidden\",\"sound_checkoff_enabled\":\"true\",\"sound_notification_enabled\":\"true\",\"start_of_week\":\"mon\",\"use_badge_icon\":\"notifications\",\"web_app_open_count\":\"1\",\"web_chrome_rating_later\":\"false\",\"web_coach_mark_inbox\":\"completed\",\"web_coach_mark_smart_list\":\"completed\",\"web_extension_last_selected_list\":\"ABNSAAVDowU\",\"web_extension_read_later_list_id\":\"wishlist_1363347220630\",\"web_last_app_open_date\":\"1389308400000\",\"web_last_used_release\":\"2.3.4.1\",\"web_new_installation\":\"true\",\"web_significant_event_count\":\"5\",\"web_uuid\":\"308c3f4d-b476-4bfe-9d9a-073b05a6406c\",\"wl1:inbox_id\":\"5590906\",\"wunderlist_timezone_offset\":\"1.0\"}}"
+    http_version:
+  recorded_at: Fri, 10 Jan 2014 23:31:15 GMT
+recorded_with: VCR 2.8.0
