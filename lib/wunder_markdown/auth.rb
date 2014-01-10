@@ -7,10 +7,10 @@ module WunderMarkdown
       @netrc = Netrc.read
     end
 
-    def save(*args)
-      @netrc[API_ENDPOINT] = args
+    def save(user, password)
+      @netrc[API_ENDPOINT] = user, password
       @netrc.save
-      args[1]
+      password
     end
 
     def get

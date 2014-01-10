@@ -8,9 +8,9 @@ module WunderMarkdown
 
     def self.run(args)
       new.call(args)
-    rescue StandardError
-      $stderr.puts 'Woops, Something went wrong.'
-      exit 1
+    # rescue StandardError
+    #   $stderr.puts 'Woops, Something went wrong.'
+    #   exit 1
     end
 
     def call(args)
@@ -36,19 +36,17 @@ module WunderMarkdown
     end
 
     def config(args, options)
-      if !client.token
-        print 'Wunderlist Credentials: We will not store your password'
-        email = options[:email]
-        if ! email
-          print 'email:'
-          email = $stdin.gets.chomp
-        end
-        print 'Password:'
-        system 'stty -echo'
-        password = $stdin.gets.chomp
-        system 'stty echo'
-        WunderMarkdown::Auth.new.save(client.login(email, password))
+      $stdout.puts 'Wunderlist Credentials: We will not store your password'
+      email = options[:email]
+      if ! email
+        $stdout.puts 'email:'
+        email = $stdin.gets.chomp
       end
+      $stdout.puts 'Password:'
+      system 'stty -echo'
+      password = $stdin.gets.chomp
+      system 'stty echo'
+      WunderMarkdown::Auth.new.save(*client.login(email, password))
     end
 
     def dump(args, options)
